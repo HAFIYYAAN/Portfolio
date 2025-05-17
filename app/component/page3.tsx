@@ -1,4 +1,4 @@
-export default function SimplePortfolio() {
+export default function Page3() {
   const project = {
     title: "Web Portfolio",
     description: "Portfolio projects are built with HTML, Tailwind, JavaScript",

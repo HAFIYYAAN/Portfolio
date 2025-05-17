@@ -45,7 +45,7 @@ const cards = [
   },
 ];
 
-export default function InfiniteScrollSlider() {
+export default function Page() {
   return (
     <div className="overflow-hidden w-full bg-gray-100 py-10 px-4 sm:px-8 lg:px-16">
       <div className="flex w-max animate-slide gap-5">

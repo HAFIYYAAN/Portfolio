@@ -3,7 +3,7 @@ import Link from "next/link";
 // The correct import syntax is:
 import { Github, Linkedin, Mail, Twitter, Instagram } from "lucide-react";
 
-export default function PortfolioFooter() {
+export default function Footer() {
   return (
     <footer id="contact" className="w-full border-t bg-white py-12">
       <div className="container px-4 md:px-6 mx-auto">

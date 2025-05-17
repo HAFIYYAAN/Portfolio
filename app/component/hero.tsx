@@ -10,7 +10,7 @@ const righteous = Righteous({
   subsets: ["latin"],
 });
 
-export default function AnimatedBackground() {
+export default function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0.5, y: 0.5 });
   const [particles, setParticles] = useState<
     { id: number; x: number; y: number }[]
