@@ -10,15 +10,18 @@ const righteous = Righteous({
 
 export default function Page2() {
   return (
-    <div className="h-screen w-full bg-black text-white flex items-center justify-center flex-col gap-10">
+    <section id='about' className="h-screen w-full bg-black text-white flex items-center justify-center flex-col gap-10">
       {/* Mouse Glow Effect - With small hole */}
       <MouseGlow
         color="#3b82f6"
         size={0}
         holeSize={0}
-        blur={40}
+        blur={30}
         intensity={0.8}
       />
+      <div>
+        <h1 className={`text-3xl mt-10 ${righteous.className}`}>About Me</h1>
+      </div>
       {/* Neon Border Container */}
       <div className="relative w-11/12 max-w-4xl mx-auto">
         {/* Neon Glow Effect */}
@@ -75,6 +78,6 @@ export default function Page2() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -48,7 +48,7 @@ export default function AnimatedBackground() {
   }, []);
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-black">
+    <div id="home" className="relative min-h-screen w-full overflow-hidden bg-black">
       {/* Animated gradient background */}
       <motion.div
         className="absolute inset-0 z-0"

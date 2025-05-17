@@ -9,9 +9,9 @@ interface MousePosition {
 
 export default function MouseGlow({
   color = "#3b82f6",
-  size = 30,
+  size = 5,
   holeSize = 0, // Ukuran lingkaran bolong di tengah
-  blur = 50,
+  blur = 20,
   intensity = 0.8,
 }: {
   color?: string

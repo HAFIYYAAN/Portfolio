@@ -36,7 +36,7 @@ export default function Header() {
         <ul className={`flex gap-16 text-white ${righteous.className}`}>
           <li>
             <Link
-              href="/"
+              href="#home"
               className="inline-block transition-all duration-300 hover:scale-135 hover:text-blue-400"
             >
               Home
@@ -45,7 +45,8 @@ export default function Header() {
 
           <li>
             <Link
-              href="/"
+              href="#about"
+              scroll={true}
               className="inline-block transition-all duration-300 hover:scale-135 hover:text-blue-400"
             >
               About Me
@@ -53,7 +54,8 @@ export default function Header() {
           </li>
           <li>
             <Link
-              href="/"
+              href="#projects"
+              scroll={true}
               className="inline-block transition-all duration-300 hover:scale-135 hover:text-blue-400"
             >
               Project
@@ -61,7 +63,8 @@ export default function Header() {
           </li>
           <li>
             <Link
-              href="/"
+              href="#contact"
+              scroll={true}
               className="inline-block transition-all duration-300 hover:scale-135 hover:text-blue-400"
             >
               Contact
