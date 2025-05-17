@@ -134,7 +134,7 @@ export default function AnimatedBackground() {
         <div className=" bottom-0">
           <Image
             className="rounded-full"
-            src="/avatar.jpg"
+            src="/myphoto.png"
             alt="avatar"
             width="250"
             height="250"

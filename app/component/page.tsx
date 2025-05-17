@@ -15,7 +15,7 @@ const cards = [
   },
   {
     title: "JavaScript",
-    image: "/Javascript.png",
+    image: "/JavaScript.png",
     desc: "The primary programming language for interactive web applications. Enables DOM manipulation, form validation, and API communication.",
   },
   {
