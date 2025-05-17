@@ -10,40 +10,34 @@ const righteous = Righteous({
 
 export default function Page2() {
   return (
-    <section id='about' className="h-screen w-full bg-black text-white flex items-center justify-center flex-col gap-10">
-      {/* Mouse Glow Effect - With small hole */}
-      <MouseGlow
-        color="#3b82f6"
-        size={0}
-        holeSize={0}
-        blur={30}
-        intensity={0.8}
-      />
-      <div>
-        <h1 className={`text-3xl mt-10 ${righteous.className}`}>About Me</h1>
-      </div>
-      {/* Neon Border Container */}
-      <div className="relative w-11/12 max-w-4xl mx-auto">
-        {/* Neon Glow Effect */}
-        <div className="absolute inset-0 rounded-md bg-transparent border-2 border-blue-500 shadow-[0_0_10px_3px_rgba(59,130,246,0.7),0_0_20px_8px_rgba(59,130,246,0.5),inset_0_0_10px_rgba(59,130,246,0.2)] animate-pulse"></div>
+    <section
+      id="about"
+      className="min-h-screen w-full bg-black text-white flex items-center justify-center flex-col gap-10 px-4 py-10 sm:px-8"
+    >
+      <MouseGlow color="#3b82f6" size={0} holeSize={0} blur={30} intensity={0.8} />
 
-        {/* Content Inside */}
-        <div className="relative z-10 text-white m-6 p-6 rounded">
-          <div className="mb-10">
-            <h1 className={`text-xl ${righteous.className}`}>
-              Hi! I&apos;m Abdullah, a Fullstack Developer who enjoys building
-              both the front-end and back-end of web applications. with a very
-              strong foundation in styling with CSS and Tailwind, I work with
-              tools like React, Next.js, Node.js, and PostgreSQL, and I love
-              turning ideas into fast, functional, and user-friendly products.
-              I&apos;m passionate about clean code, great design, and continuous
-              learning.
-            </h1>
-          </div>
-          <div className="flex gap-30">
-            <div>
-              <h1 className="font-bold text-lg mb-2">~ Front-End</h1>
-              <ul className="list-disc pl-5">
+      <h1 className={`text-3xl sm:text-4xl mt-10 ${righteous.className}`}>About Me</h1>
+
+      <div className="relative w-full max-w-6xl mx-auto">
+        {/* Neon Glow Border */}
+        <div className="absolute inset-0 rounded-md border-2 border-blue-500 shadow-[0_0_10px_3px_rgba(59,130,246,0.7),0_0_20px_8px_rgba(59,130,246,0.5),inset_0_0_10px_rgba(59,130,246,0.2)] animate-pulse" />
+
+        {/* Content */}
+        <div className="relative z-10 text-white m-4 sm:m-6 p-4 sm:p-6 rounded">
+          <p className={`text-base sm:text-lg mb-10 leading-relaxed ${righteous.className}`}>
+            Hi! I&apos;m Abdullah, a Fullstack Developer who enjoys building both the front-end
+            and back-end of web applications. With a very strong foundation in styling with CSS and
+            Tailwind, I work with tools like React, Next.js, Node.js, and PostgreSQL, and I love
+            turning ideas into fast, functional, and user-friendly products. I&apos;m passionate
+            about clean code, great design, and continuous learning.
+          </p>
+
+          {/* Responsive Grid */}
+          <div className="flex flex-wrap gap-y-8 gap-x-10 sm:gap-x-14 justify-start">
+            {/* Front-End */}
+            <div className="w-full sm:w-[45%] md:w-[22%]">
+              <h2 className="font-bold text-lg mb-2">~ Front-End</h2>
+              <ul className="list-disc pl-5 text-sm sm:text-base">
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>JavaScript</li>
@@ -52,23 +46,29 @@ export default function Page2() {
                 <li>Tailwind CSS</li>
               </ul>
             </div>
-            <div>
-              <h1 className="font-bold text-lg mb-2">Back-End</h1>
-              <ul className="list-disc pl-5">
+
+            {/* Back-End */}
+            <div className="w-full sm:w-[45%] md:w-[22%]">
+              <h2 className="font-bold text-lg mb-2">Back-End</h2>
+              <ul className="list-disc pl-5 text-sm sm:text-base">
                 <li>Node.js</li>
                 <li>REST API</li>
               </ul>
             </div>
-            <div>
-              <h1 className="font-bold text-lg mb-2">Database</h1>
-              <ul className="list-disc pl-5">
+
+            {/* Database */}
+            <div className="w-full sm:w-[45%] md:w-[22%]">
+              <h2 className="font-bold text-lg mb-2">Database</h2>
+              <ul className="list-disc pl-5 text-sm sm:text-base">
                 <li>PostgreSQL</li>
                 <li>MySQL</li>
               </ul>
             </div>
-            <div>
-              <h1 className="font-bold text-lg mb-2">Tools</h1>
-              <ul className="list-disc pl-5">
+
+            {/* Tools */}
+            <div className="w-full sm:w-[45%] md:w-[22%]">
+              <h2 className="font-bold text-lg mb-2">Tools</h2>
+              <ul className="list-disc pl-5 text-sm sm:text-base">
                 <li>Git & GitHub</li>
                 <li>Vercel</li>
                 <li>Figma</li>

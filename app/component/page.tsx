@@ -47,27 +47,26 @@ const cards = [
 
 export default function InfiniteScrollSlider() {
   return (
-    <div className="overflow-hidden w-full bg-gray-100 py-10">
+    <div className="overflow-hidden w-full bg-gray-100 py-10 px-4 sm:px-8 lg:px-16">
       <div className="flex w-max animate-slide gap-5">
         {[...cards, ...cards].map((card, i) => (
           <div
             key={i}
-            className="min-w-[300px] max-w-[300px] shadow-2xl border rounded-md bg-white text-center py-12 px-4"
+            className="min-w-[220px] sm:min-w-[260px] md:min-w-[300px] max-w-[300px] shadow-2xl border rounded-md bg-white text-center py-8 px-4 sm:py-10 sm:px-6"
           >
             <Image
               src={card.image}
               alt={card.title}
               width={50}
               height={50}
-              className="mx-auto m-4"
+              className="mx-auto mb-4"
             />
-            <h3 className="font-bold text-lg my-2">{card.title}</h3>
-            <p className="text-[14px]">{card.desc}</p>
+            <h3 className="font-bold text-lg mb-2">{card.title}</h3>
+            <p className="text-[13px] sm:text-sm text-gray-700">{card.desc}</p>
           </div>
         ))}
       </div>
 
-      {/* Tambah style di bawah */}
       <style jsx>{`
         @keyframes slide {
           0% {

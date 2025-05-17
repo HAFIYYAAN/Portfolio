@@ -17,7 +17,6 @@ export default function AnimatedBackground() {
   >([]);
   const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
 
-  // Set window size once after mount
   useEffect(() => {
     if (typeof window !== "undefined") {
       setWindowSize({
@@ -34,7 +33,6 @@ export default function AnimatedBackground() {
     }
   }, []);
 
-  // Mouse movement handler
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({
@@ -48,7 +46,10 @@ export default function AnimatedBackground() {
   }, []);
 
   return (
-    <div id="home" className="relative min-h-screen w-full overflow-hidden bg-black">
+    <div
+      id="home"
+      className="relative min-h-screen w-full overflow-hidden bg-black"
+    >
       {/* Animated gradient background */}
       <motion.div
         className="absolute inset-0 z-0"
@@ -106,38 +107,41 @@ export default function AnimatedBackground() {
         />
       ))}
 
-      {/* Hero section content */}
-      <div className="relative z-20 text-white justify-center items-center flex gap-20 h-screen">
-        <div className="flex flex-col gap-3">
-          <div className="font-bold text-2xl">
-            <h1 className="text-start">
-              Hello, my name is <br />
-              <span className="text-5xl">ABDULLAH HAFIYYAN</span>
-            </h1>
-          </div>
+      {/* Hero Section */}
+      <div className="relative z-20 flex flex-col-reverse md:flex-row justify-center items-center gap-10 md:gap-20 h-screen px-4 md:px-12">
+        {/* Text Section */}
+        <div className="flex flex-col gap-4 text-white text-center md:text-left">
+          <h1 className="text-xl sm:text-2xl font-bold">
+            Hello, my name is <br />
+            <span className="text-3xl sm:text-4xl lg:text-5xl">
+              ABDULLAH HAFIYYAN
+            </span>
+          </h1>
           <div
-            className={`animate-pulse text-4xl font-bold tracking-wider text-blue-500 drop-shadow-[0_0_10px_rgba(0,122,250,0.8)] md:text-5xl ${righteous.className}`}
+            className={`animate-pulse text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wider text-blue-500 drop-shadow-[0_0_10px_rgba(0,122,250,0.8)] ${righteous.className}`}
           >
             Fullstack Web Developer
           </div>
-          <div>
-            <p className="text-[14px]">
-              &quot;I am a fullstack web developer with a focus on building
-              efficient and responsive web applications.&quot; <br />
-              <span className="font-bold">
-                &quot;Experienced in modern technologies such as React, Next.js,
-                and Node.js.&quot;
-              </span>
-            </p>
-          </div>
+          <p className="text-sm sm:text-base max-w-md">
+            &quot;I am a fullstack web developer with a focus on building
+            efficient and responsive web applications.&quot;
+            <br />
+            <span className="font-bold">
+              &quot;Experienced in modern technologies such as React, Next.js,
+              and Node.js.&quot;
+            </span>
+          </p>
         </div>
-        <div className=" bottom-0">
+
+        {/* Image Section */}
+        <div>
           <Image
             className="rounded-full"
             src="/myphoto.png"
             alt="avatar"
-            width="250"
-            height="250"
+            width={200}
+            height={200}
+            sizes="(max-width: 768px) 150px, (max-width: 1024px) 200px, 250px"
           />
         </div>
       </div>
