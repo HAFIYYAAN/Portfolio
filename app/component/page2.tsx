@@ -52,7 +52,6 @@ export default function Page2() {
               <h2 className="font-bold text-lg mb-2">Back-End</h2>
               <ul className="list-disc pl-5 text-sm sm:text-base">
                 <li>Node.js</li>
-                <li>REST API</li>
               </ul>
             </div>
 
