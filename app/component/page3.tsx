@@ -11,7 +11,7 @@ export default function Page3() {
       className="relative min-h-screen w-full bg-black pb-10 px-4 sm:px-8"
     >
       {/* Blue spotlight effect */}
-      <div className="absolute bottom-0 left-1/2 h-[300px] w-[400px] -translate-x-1/2 transform rounded-full bg-blue-500/20 blur-[80px]" />
+      <div className="absolute bottom-0 left-1/2 h-[300px] w-[200px] -translate-x-1/2 transform rounded-full bg-blue-500/20 blur-[80px]" />
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto">
