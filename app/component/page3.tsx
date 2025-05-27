@@ -18,7 +18,7 @@ export default function Page3() {
         {/* Header */}
         <header className="py-16 text-center">
           <h1 className="text-3xl sm:text-4xl font-bold text-white">
-            My Portfolio
+            My Project
           </h1>
         </header>
 
