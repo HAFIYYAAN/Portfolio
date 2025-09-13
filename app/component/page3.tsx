@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Page3() {
   const project = {
     title: "Web Portfolio",
@@ -25,12 +27,14 @@ export default function Page3() {
         {/* Project card */}
         <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg transition-transform duration-300 hover:scale-110 cursor-pointer">
           <div className="overflow-hidden rounded-2xl bg-gray-900/70">
-            <img
-              src={project.image || "/Portfolio.png"}
-              alt={project.title}
-              className="h-60 w-full object-cover rounded-t-2xl"
-              loading="lazy"
-            />
+            <Link href="#">
+              <img
+                src={project.image || "/Portfolio.png"}
+                alt={project.title}
+                className="h-60 w-full object-cover rounded-t-2xl"
+                loading="lazy"
+              />
+            </Link>
             <div className="px-5 pb-5 pt-3">
               <h3 className="mb-2 text-xl sm:text-2xl font-medium text-white">
                 {project.title}
